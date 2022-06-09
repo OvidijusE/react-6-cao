@@ -1,0 +1,45 @@
+body {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 0.5rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: grey;
+}
+
+.active {
+  color: midnightblue;
+  font-size: larger;
+}
+
+.add-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0.1rem 0.1rem 0.5rem gray;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.add-form input {
+  margin-bottom: 0.2rem;
+}
+
+.bill-table {
+  box-shadow: 0.1rem 0.1rem 0.5rem gray;
+  padding: 0.5rem;
+}
