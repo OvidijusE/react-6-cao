@@ -11,28 +11,26 @@ function BillsList() {
     getBills();
   });
   return (
-    <div className='bill-table'>
+    <div className='bill-table-container'>
       <h1 className='title'>Bills Table</h1>
       {billsArray.length === 0 && <h2>Loading Bills ...</h2>}
       {billsArray.map((bObj, id) => (
-        <div key={id}>
-          <table>
-            <thead>
-              <tr>
-                <th>Bill id</th>
-                <th>Number of People</th>
-                <th>Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>{bObj.id}</td>
-                <td>{bObj.people}</td>
-                <td>{bObj.prices}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <table className='bill-table' key={id}>
+          <thead>
+            <tr>
+              <th>Bill id</th>
+              <th>Number of People</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{bObj.id}</td>
+              <td>{bObj.people}</td>
+              <td>{bObj.price}</td>
+            </tr>
+          </tbody>
+        </table>
       ))}
     </div>
   );

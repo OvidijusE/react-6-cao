@@ -1,3 +1,3 @@
 export default function AddButton() {
-  return <button>Add</button>;
+  return <button className='button'>Add</button>;
 }

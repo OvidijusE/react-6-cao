@@ -8,7 +8,7 @@ const AddPage = () => {
         <label>Enter Number of People:</label>
         <input type='number' placeholder='Number of People' />
         <label>Enter price</label>
-        <input type='number' placeholder='Price Amount' step='0.01' />
+        <input type='number' placeholder='Price' step='0.01' />
         <AddButton />
       </form>
     </div>
