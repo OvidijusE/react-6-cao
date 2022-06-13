@@ -1,20 +1,20 @@
 import { Route } from 'react-router-dom';
 import { Switch } from 'react-router-dom';
 import './App.css';
-import Navigation from './components/Navigation';
-import AddPage from './pages/AddPage';
-import HomePage from './pages/HomePage';
+import NavigationStyled from './components/NavigationStyled/NavigationStyled';
+import AddPageStyled from './pages/AddPageStyled/AddPageStyled';
+import HomePageStyled from './pages/HomePageStyled/HomePageStyled';
 
 function App() {
   return (
     <div className='App'>
-      <Navigation />
+      <NavigationStyled />
       <Switch>
         <Route path='/add'>
-          <AddPage />
+          <AddPageStyled />
         </Route>
         <Route path='/'>
-          <HomePage />
+          <HomePageStyled />
         </Route>
       </Switch>
     </div>
