@@ -10,5 +10,10 @@ export const BillTableContainer = styled.div`
 `;
 
 export const BillTable = styled.table`
-  border-collapse: collapse;
+  & {
+    border-collapse: collapse;
+  }
+  & tbody:nth-child(even) {
+    background-color: rgb(248, 222, 222);
+  }
 `;

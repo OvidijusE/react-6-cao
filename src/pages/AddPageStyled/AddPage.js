@@ -1,4 +1,4 @@
-import AddButtonStyled from '../../UI/ButtonStyled/ButtonStyled';
+import AddButtonStyled from '../../UI/ButtonStyled/Button';
 import { AddContainer, AddForm, FormInput } from './Styled';
 
 const AddPageStyled = () => {
